@@ -6,5 +6,10 @@ pipeline{
                 git credentialsId: 'd7781dc9-e129-4ce1-869d-a22b6dc4f1f8', url: 'https://github.com/puvvadi36/JAVA-.git'
             }
         }
+        stage("Maven build"){
+           steps{
+           sh "mvn install"
+           }
+        }
     }
 }
