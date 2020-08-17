@@ -1,0 +1,10 @@
+pipeline{
+    agent any
+    stages{
+        stage( "Git Checkout" ){
+            steps{
+                git credentialsId: 'd7781dc9-e129-4ce1-869d-a22b6dc4f1f8', url: 'https://github.com/puvvadi36/JAVA-.git'
+            }
+        }
+    }
+}
